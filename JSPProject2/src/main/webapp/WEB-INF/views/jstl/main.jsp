@@ -27,6 +27,40 @@
 <title>JSTL(Jsp Standard Tag Library)</title>
 </head>
 <body>
+		<!-- 상대 경로 : 현재 경로가 중요함  
+		
+		현재 경로 : localhost :8000/jstl/main
+		목표 경로 : localhost :8000/jstl/condition
+		
+		-->
+		<a href="condition">JSTL을 이용한 조건문(if, choose, when,otherwise)</a>
+
+
+	<!-- 상대 경로 : 현재 경로가 중요함  
+		
+		현재 경로 : localhost :8000/jstl/main
+		목표 경로 : localhost :8000/jstl/loop
+		
+		-->
+
+	<a href="loop">JSTL을 이용한 반복문</a>
+	<br>
+	
+	<a href="student/selectAll">workbook에서 학생 전체 조회하기</a>
+	
+	<%--
+		건축공학과 학생만 찾아라
+		student/selectArch
+		selectArch.jsp	
+	 --%>
+	 
+	 <form action="student/selectOne" method="post">
+	 	<input type="text" name="deptName">
+	 </form>
+	 
+	 <br>
+	 <a href="student/selectArch">건축공학과 학생만 찾아라</a>
+	 
 
 	<h1>JSTL(Jsp Standard Tag Library, JSP 표준 태그 라이브러리)</h1>
 
