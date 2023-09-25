@@ -206,7 +206,7 @@ nav a:hover{
 }
 
 /* id input 태그 */
-input[name='inputId']{
+input[name='inputEmail']{
     border-bottom : 1px solid #ccc !important;
 }
 

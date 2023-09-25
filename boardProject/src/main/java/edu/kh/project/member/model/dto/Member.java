@@ -9,15 +9,11 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@NoArgsConstructor // 기본 생성자
+@NoArgsConstructor // 기본생성자
 @AllArgsConstructor // 모든 필드 매개변수 생성자
 public class Member {
 	
-	// lombok 라이브러러ㅣ : getter/setter, 생성자, toString() 자동 완성 라이브러리
-	
-	
-	
-	
+	// lombok 라이브러리 : getter/setter, 생성자, toString() 자동완성 라이브러리
 	private int memberNo;
 	private String memberEmail;
 	private String memberPw;

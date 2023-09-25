@@ -45,16 +45,12 @@ public class JDBCTemplate {
 				
 				
 				String filePath
-				= JDBCTemplate.class.getResource("/edu/kh/project/sql/driver.xml").getPath();
+					= JDBCTemplate.class.getResource("/edu/kh/project/sql/driver.xml").getPath();
 				
-				//file:/C:/server_06/...
-				// /C:/server_06/...
+				// file:/C:/server_06/...
+				//  /C:/server_06/...
 				
 				System.out.println(filePath);
-				
-				
-				
-				
 				
 				
 				prop.loadFromXML(  new FileInputStream(filePath)  );
@@ -79,6 +75,7 @@ public class JDBCTemplate {
 			}
 			
 		}catch (Exception e) {
+			System.out.println("[Connection 생성 중 예외 발생]");
 			e.printStackTrace();
 		}
 		
